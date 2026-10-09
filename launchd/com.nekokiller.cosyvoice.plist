@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.nekokiller.cosyvoice</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/nekokiller/run_cosyvoice3.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/tmp</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>COSYVOICE3_DIR</key>
+        <string>/Volumes/AcasisRaid2TB/CosyVoice3</string>
+        <key>COSYVOICE3_MODE</key>
+        <string>zero_shot</string>
+        <key>COSYVOICE3_PROMPT_WAV</key>
+        <string>/Volumes/AcasisRaid2TB/CosyVoice3/asset/zero_shot_prompt.wav</string>
+        <key>COSYVOICE3_PROMPT_TEXT</key>
+        <string>You are a helpful assistant.&lt;|endofprompt|&gt;希望你以后能够做的比我还好呦。</string>
+        <key>COSYVOICE_PORT</key>
+        <string>8765</string>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/cosyvoice_server.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/cosyvoice_server.log</string>
+</dict>
+</plist>
